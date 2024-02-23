@@ -1,17 +1,16 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "index.html",
-        "use": "@vercel/static-build"
-      }
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
     ],
     "routes": [
-      { "handle": "filesystem" },
-      {
-        "src": "/(.*)",
-        "dest": "index.html"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "/",
+            "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+        }
     ]
-  }
-  
+}
