@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.12.2",
+    "@mantine/hooks": "^7.12.2",
     "ethers": "^6.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "web3": "^4.5.0"
+    "web3": "^4.13.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
